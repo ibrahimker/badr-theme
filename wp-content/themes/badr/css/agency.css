@@ -1,0 +1,1358 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+ /* Biru Badr = #00B4FF*/
+ body {
+    padding-top: 50px;
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #00B4FF;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #00B4FF;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #00B4FF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #00B4FF;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #00B4FF;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #00B4FF;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #00B4FF;
+    background-color: #00B4FF;
+}
+
+.btn-primary .badge {
+    color: #00B4FF;
+    background-color: #fff;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #00B4FF;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #00B4FF;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #00B4FF;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #00B4FF;
+    background-color: #00B4FF;
+}
+
+.btn-xl .badge {
+    color: #00B4FF;
+    background-color: #fff;
+}
+
+.navbar-default {
+    border-color: transparent;
+    padding: 25px 0;
+    background-color: #000000;
+    margin:0px;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #00B4FF;
+    padding:0px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #00B4FF;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #00B4FF;
+    background-color: #00B4FF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #00B4FF;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #00B4FF;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #00B4FF;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #00B4FF;
+}
+.navbar-btn{
+    margin:0px;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        margin:0px;
+        border: none;
+        border-radius: 0px;
+        background-color: #000000;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #000000;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #00B4FF;
+}
+
+::selection {
+    text-shadow: none;
+    background: #00B4FF;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #00B4FF;
+}
+
+/*edited in here*/
+.navbar-mid{
+    margin-left:20%;
+}
+.btn-badr {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #00B4FF;
+    padding: 10px 20px 10px 20px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+}
+
+.btn-badr:hover {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#ffffff;
+}
+.subscribe-btn{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #00B4FF;
+    padding: 5px 30px 5px 30px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+}
+.subscribe-btn:hover{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 5px 30px 5px 30px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#ffffff;
+}
+/*Halaman 404*/
+#section-404 {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/404.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.header-404{
+    color:#ffffff;
+    font-size:72px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-top:200px;
+}
+.subheader-404{
+    color:#ffffff;
+    font-size:48px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding:50px 0px 25px 0px;
+}
+
+/*header section*/
+header .intro-lead-in {
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header .intro-heading {
+    margin-bottom: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 22px;
+}
+
+header .intro-image{
+    padding-top:30%;
+    float:right !important;
+}
+
+@media(min-width:768px) {
+    header .intro-lead-in {
+        padding-top:30%;
+        margin-bottom: 25px;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:left;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    header .intro-heading {
+        margin-bottom: 20px;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 18px;
+        font-weight:300;
+    }
+    header .intro-works{
+        margin-bottom:25px;
+        padding:10px 40px;
+        float:left !important;
+    }
+    header .btn-badr:hover{
+        padding:10px 40px;
+    }
+    header .intro-image{
+        padding-top:50%;
+        float:right !important;
+    }
+}
+
+
+/*background*/
+.home-header header{
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/home_1.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:inherit;
+}
+#home2 {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/home_2.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:inherit;
+}
+#home3 {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/home_3.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:inherit;
+}
+#home4 {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/home_4.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:inherit;
+}
+#home5 {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/home_5.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:inherit;
+}
+#contact-us {
+    text-align: center;
+    color: #fff;
+    background-color:#000000;
+    background-size: cover;
+    -o-background-size: cover;
+    height:inherit;
+}
+
+/*penjelasan section*/
+.text1right {
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 25px;
+    font-weight: 700;
+    float:right !important;
+}
+
+.text2right {
+    margin-bottom: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 22px;
+    float:right !important;
+}
+
+.text3right {
+    margin-bottom: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 22px;
+    float:right !important;
+}
+
+.text1left {
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 25px;
+    font-weight: 700;
+    float:left !important;
+}
+
+.text2left {
+    margin-bottom: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 22px;
+    float:left !important;
+}
+
+.text3left {
+    margin-bottom: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 22px;
+    float:left !important;
+}
+
+@media(min-width:768px) {
+    .text1right {
+        padding-top:100px;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:right;
+        font-size: 50px;
+        font-weight: 700;
+        float:right !important;
+    }
+
+    .text2right {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 18px;
+        font-weight:400;
+        float:right !important;
+    }
+
+    .text3right {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-weight:300;
+        float:right !important;
+    }
+
+    .text1left {
+        padding-top:100px;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:left;
+        font-size: 50px;
+        font-weight: 700;
+        float:left !important;
+    }
+
+    .text2left {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 18px;
+        font-weight:400;
+        float:left !important;
+    }
+
+    .text3left {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-weight:300;
+        float:left !important;
+    }
+}
+
+/*Testimoni Section*/
+.testimoni {
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:center;
+    font-size: 16px;
+    font-weight: 400;
+    float:right !important;
+}
+.nama, .jabatan{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:center;
+    font-size: 18px;
+}
+@media(min-width:768px) {
+    .testimoni {
+        padding-top:100px;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        font-size: 18px;
+        font-weight: 400;
+        float:right !important;
+    }
+    .nama, .jabatan{
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        font-size: 18px;
+    }
+}
+
+/*bagian contact*/
+/*Testimoni Section*/
+.contact {
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.contact2 {
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:center;
+    font-size: 14px;
+    font-weight: 400;
+    padding:50px 0px;
+}
+/*gravity form di home*/
+.home-form{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:14px;
+    color:#ffffff;
+    text-align: justify !important;
+}
+.home-form .gfield_required{
+    display:none;
+}
+.home-form .ginput_container input, .home-form .ginput_container textarea{
+    color:#ffffff;
+    background-color:transparent;
+    border:none;
+    font-size:24px !important;
+}
+.home-form label{
+    font-size:24px !important;
+}
+.home-form .gf_page_steps, .home-form .gform_page_footer{
+    border:none !important;
+}
+.home-form .gform_next_button,.home-form .gform_previous_button, .home-form .gform_submit_button {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #00B4FF;
+    padding: 10px 30px 10px 30px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    margin:0px 30px 0px 0px;
+}
+
+.home-form .gform_next_button:hover,.home-form .gform_previous_button:hover, .home-form .gform_submit_button:hover {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#ffffff;
+    margin:0px 30px 0px 0px;
+}
+@media(min-width:768px) {
+    .contact {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .contact2 {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        font-size: 18px;
+        font-weight: 400;
+        padding:80px 0px;
+    }
+}
+
+/*footer*/
+footer {
+    background-color:#000000;
+    padding-top:100px;
+}
+img {
+    padding:5px 15px;
+}
+.copywright {
+    color:#555555;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.language {
+    color:#555555;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+hr{
+    color:#555555;
+}
+footer a{
+    color:#555555;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*untuk halaman works*/
+section#portfolio{
+    background-color:#000000;
+}
+section#works{
+    background-color:#ffffff;
+}
+.works-title{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:24px;
+    font-weight: bold;
+}
+.work-pagination-prev{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    color:#BBBBBB;
+    font-size:12px;
+}
+.work-pagination-next{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:right;
+    color:#BBBBBB;
+    font-size:12px;
+}
+.work-prev-link{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size:16px;
+}
+.work-next-link{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:right;
+    font-size:16px;
+}
+
+/*untuk halaman about*/
+/*header section*/
+#about-header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/about.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#about-header h1 {
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media(min-width:768px) {
+    #about-header h1 {
+        padding:25% 5% 20% 5%;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        font-size: 36px;
+        font-weight: 700;
+    }
+}
+
+.about-tabs{
+    padding:0px 50px;
+    border:none;
+}
+
+section#about{
+    background-color:#000000;
+}
+.about-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    zoom:1; /* hasLayout ie7 trigger */
+}
+
+.about-tabs.centered > li, .nav-pills.centered > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    zoom:1; /* hasLayout ie7 trigger */
+}
+
+.about-tabs.centered, .nav-pills.centered {
+    text-align:center;
+}
+
+.about-tabs>li>a {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing:1px;
+    color:#ffffff;
+}
+
+.about-tabs>li.active>a, .about-tabs>li.active>a:focus, .about-tabs>li.active>a:hover {
+    border:none;
+    background-color: transparent;
+    color:#00B4FF;
+}
+
+.about-tabs>li>a:focus, .about-tabs>li>a:hover {
+    border:none;
+    background-color: transparent;
+    color:#00B4FF;
+}
+.tab-content{
+    padding:30px;
+}
+/*halaman about bagian company*/
+#comp-img{
+    width:100%;
+    padding:20px 50px 50px 50px;
+}
+#comp-desc-1 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:400;
+    color:#ffffff;
+    text-align:justify;
+
+}
+#comp-desc-2{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:200;
+    color:#ffffff;
+    text-align:justify;
+}
+/*halaman about bagian people*/
+#comp-people-header{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;    
+}
+#comp-people-bates{
+    border-color:#00B4FF;
+}
+.comp-people-desc{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;   
+    text-align:justify;
+}
+.comp-people-icon{
+    padding-top:10px;
+}
+.comp-people-num{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;    
+    text-align:center;
+    font-weight:700;
+    text-transform: none;  
+}
+.comp-people-fact{
+    color:#606060;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:400;
+    text-align:center;
+    padding:0px 10px;
+}
+/*halaman about bagian approach*/
+#comp-approach-header{
+    color:#ffffff;
+    text-transform:none;
+    font-weight:400;
+    font-size:36px;
+    text-align:center;
+    padding:0px 50px 30px 50px;
+}
+.comp-approach-header2{
+    color:#ffffff;
+    font-weight:300;
+    font-size:20px;
+}
+.comp-approach-desc{
+    color:#ffffff;
+    font-weight:300;
+    font-size:16px;
+    text-align:justify;
+    padding-top:15px;
+}
+/*halaman about bagian values*/
+.comp-val-num{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:end;
+    padding-top:5px;
+}
+.comp-val-bates{
+    border-color:#ffffff;
+}
+.comp-val-val{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:28px;
+    font-weight:700;
+}
+.comp-val-desc{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*untuk halaman careers*/
+/*header section*/
+#careers-header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/career.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#careers-header h1 {
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing:1.2px;
+}
+
+@media(min-width:768px) {
+    #careers-header h1 {
+        padding:25% 5% 20% 5%;
+        letter-spacing:1.2px;  
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        text-transform: none;
+        font-size: 36px;
+        font-weight: 400;
+    }
+}
+/*halaman careers bagian jobs*/
+#careers-jobs-head{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:28px;
+}
+.careers-jobs-job{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:24px;
+}
+.careers-jobs-stat{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:14px;
+}
+#careers-jobs i, #careers-faq i{
+    color:#00B4FF;
+    font-size:24px;
+}
+/*halaman careers bagian faq*/
+.careers-faq-faq{
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:18px;
+    font-weight:300;
+}
+
+/*Halaman Blog*/
+#blog-header{
+    text-align: center;
+    color: #fff;
+    padding:70px 0px 20px 0px;
+    background-attachment: scroll;
+    background-color:#222222;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#blog{
+    padding:30px 0px;
+}
+.head-blog{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#BBBBBB;
+    font-weight:400;
+    padding-bottom: 30px;
+}
+.post-thumbnail{
+    padding:30px 0px 30px 0px;
+}
+.blog-author-name{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:bold;
+    color:#000000;
+    padding-top:15px;
+}
+.blog-posts-date{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#BBBBBB;
+    line-height:0.5;
+}
+.tags-title {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:bold;
+    color:#000000;
+    line-height: 0.5;
+}
+#search-box{
+    padding:15px0 px;
+}
+#search-box input{
+    background-color: transparent;
+    padding-top:30px;
+    border:none;
+    -webkit-box-shadow:none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#BBBBBB;
+}
+#search-box span{
+    background-color: transparent;
+    padding-top:23px;
+    border:none;
+    -webkit-box-shadow:none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#BBBBBB;
+}
+#popular-posts{
+    padding-top:40px;
+}
+.sidebar-header{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:400;
+    color:#000000;
+    font-size: 18px;
+}
+.sidebar-bates{
+    border-color:#00B4FF;
+    margin:0;
+}
+.popular-list{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:400;
+    color:#000000;
+    line-height:3;
+    padding:10px 0px 10px 0px;
+}
+.popular-entry-title{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:400;
+    color:#000000;
+    font-size:12px;
+}
+.popular-category{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:400;
+    color:#000000;
+    padding:10px 0px 10px 0px;
+}
+.popular-category li a{
+    color:#000000;
+    line-height:3;
+}
+/*single post*/
+.post-pagination-prev{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    color:#BBBBBB;
+    font-size:12px;
+}
+.post-pagination-next{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:right;
+    color:#BBBBBB;
+    font-size:12px;
+}
+.post-prev-link{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size:16px;
+}
+.post-next-link{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:right;
+    font-size:16px;
+}
+.post-author-name{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:bold;
+}
+.post-author-bio{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#BBBBBB;
+}
+/*panah fullpage*/
+.fp-controlArrow.fp-prev {
+    left: 0;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url("../img/Icons/icon_previousactive_home.png") no-repeat;
+    background-position: right center;
+    cursor: pointer;
+}
+.fp-controlArrow.fp-next {
+    right: 0;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url("../img/Icons/icon_nextactive_home.png") no-repeat;
+    background-position: left center;
+    cursor: pointer;
+}
+/*Untuk halaman contact*/
+#contact-header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header/contact.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#quotation-header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-color:#00B4FF;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#others-header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-color:#FFFFFF;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.contact-header{
+    margin-bottom: 25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:left;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing:1.2px;
+}
+
+@media(min-width:768px) {
+    .contact-header{
+        padding:17% 5% 1% 5%;
+        letter-spacing:1.2px;  
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        text-transform: none;
+        font-size: 60px;
+        font-weight: 400;
+    }
+    .contact-quotation{
+        padding:20% 5% 1% 5%;
+        letter-spacing:1.2px;  
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        text-transform: none;
+        font-weight: 400;
+    }
+    .other-question{
+        padding:20% 5% 1% 5%;
+        letter-spacing:1.2px;  
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        text-transform: none;
+        font-weight: 400;
+    }
+    .contact-subheader {
+        padding:0% 10% 2% 10%;
+        line-height: 1.5;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        color:#707070;
+        text-transform: none;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+#contact-footer{
+    background-color:#101010;
+    padding:20px 50px 20px 50px;
+}
+.contact-footer-text{
+    text-align:center;
+    font-size:16px;
+    color:#ffffff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.contact-quotation{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:14px;
+    color:#ffffff;
+    text-align: justify; !important;   
+}
+.other-question{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:14px;
+    color:#BBBBBB;
+    text-align: justify !important;   
+}
+/*setting halaman contact quotation*/
+.contact-quotation .gform_page_footer{
+    border:none !important;
+}
+.contact-quotation .gform_next_button, .contact-quotation .gform_previous_button, .contact-quotation .gform_submit_button {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 3px;
+    text-decoration: none;
+    margin:0px 30px 0px 0px;
+}
+
+.contact-quotation .gform_next_button:hover, .contact-quotation .gform_previous_button:hover, .contact-quotation .gform_submit_button:hover {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#ffffff;
+    margin:0px 30px 0px 0px;
+}
+.contact-quotation .ginput_container input{
+    color:#ffffff;
+    background-color:transparent;
+    border:none;
+    font-size:20px !important;
+}
+.contact-quotation .gfield_required{
+    display:none;
+}
+/*setting halaman other question*/
+.other-question .gform_page_footer{
+    border:none !important;
+}
+.other-question .gform_next_button, .other-question .gform_previous_button, .other-question .gform_submit_button {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #BBBBBB;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 3px;
+    text-decoration: none;
+    margin:0px 30px 0px 0px;
+}
+
+.other-question .gform_next_button:hover, .other-question .gform_previous_button:hover, .other-question .gform_submit_button:hover {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#BBBBBB;
+    margin:0px 30px 0px 0px;
+}
+.other-question .ginput_container input{
+    color:#BBBBBB;
+    background-color:transparent;
+    border:none;
+    font-size:24px !important;
+}
+.other-question .gfield_required{
+    display:none;
+}
