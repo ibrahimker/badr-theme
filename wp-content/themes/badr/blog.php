@@ -50,9 +50,13 @@ get_header();
 							</div>
 						</div>
 						<div class="row">
+							<div>&nbsp;</div>
 							<p><div class="tags-title">Tags</div><?php the_category(' '); ?></p>
+							<div>&nbsp;</div>
 						</div>
-						<a href="<?php the_permalink(); ?>" type="button" class="btn btn-badr navbar-btn">Continue Reading</a>
+						<div class="row">
+							<a href="<?php the_permalink(); ?>" type="button" class="btn btn-badr navbar-btn">Continue Reading</a>
+						</div>
 					</div>
 					<hr class="bates-post">
 				<?php endwhile; ?>

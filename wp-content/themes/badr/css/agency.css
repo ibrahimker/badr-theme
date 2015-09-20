@@ -7,7 +7,7 @@
  body {
     padding-top: 50px;
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-muted {
@@ -411,13 +411,14 @@ header .intro-lead-in {
 header .intro-heading {
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
+    text-align:center;
     font-size: 22px;
 }
 
 header .intro-image{
     padding-top:30%;
     float:right !important;
+    display:none;
 }
 
 @media(min-width:768px) {
@@ -432,6 +433,7 @@ header .intro-image{
 
     header .intro-heading {
         margin-bottom: 20px;
+        text-align: left;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 18px;
         font-weight:300;
@@ -446,10 +448,14 @@ header .intro-image{
     }
     header .intro-image{
         padding-top:50%;
+        display:inherit;
         float:right !important;
     }
 }
-
+#project-footer{
+    background-color:#EEEEEE;
+    padding:20px 50px 20px 50px;
+}
 
 /*background*/
 .home-header header{
@@ -530,51 +536,51 @@ header .intro-image{
 .text1right {
     margin-bottom: 25px;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
+    text-align:center;
     font-size: 25px;
     font-weight: 700;
-    float:right !important;
+    float:center !important;
 }
 
 .text2right {
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
+    text-align:center;
     font-size: 22px;
-    float:right !important;
+    float:center !important;
 }
 
 .text3right {
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
+    text-align:center;
     font-size: 22px;
-    float:right !important;
+    float:center !important;
 }
 
 .text1left {
     margin-bottom: 25px;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
+    text-align:center;
     font-size: 25px;
     font-weight: 700;
-    float:left !important;
+    float:center !important;
 }
 
 .text2left {
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
+    text-align:center;
     font-size: 22px;
-    float:left !important;
+    float:center !important;
 }
 
 .text3left {
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
+    text-align:center;
     font-size: 22px;
-    float:left !important;
+    float:center !important;
 }
 
 @media(min-width:768px) {
@@ -675,7 +681,7 @@ header .intro-image{
 /*gravity form di home*/
 .home-form{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:14px;
+    font-size:20px;
     color:#ffffff;
     text-align: justify !important;
 }
@@ -686,7 +692,18 @@ header .intro-image{
     color:#ffffff;
     background-color:transparent;
     border:none;
-    font-size:24px !important;
+    font-size:20px !important;
+}
+.home-form .ginput_container input{
+    animation: blink-home 1s infinite;
+    border-left: transparent solid 1px;
+    margin:5px 
+}
+@keyframes blink-home {
+  50% {border-left: 1px solid #ffffff;}
+}
+.home-form .ginput_container input:focus, .home-form .ginput_container textarea:focus{
+    animation: none;
 }
 .home-form label{
     font-size:24px !important;
@@ -694,7 +711,7 @@ header .intro-image{
 .home-form .gf_page_steps, .home-form .gform_page_footer{
     border:none !important;
 }
-.home-form .gform_next_button,.home-form .gform_previous_button, .home-form .gform_submit_button {
+.home-form .gform_next_button,.home-form .gform_previous_button, .home-form input[type="submit"] {
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
@@ -707,7 +724,7 @@ header .intro-image{
     margin:0px 30px 0px 0px;
 }
 
-.home-form .gform_next_button:hover,.home-form .gform_previous_button:hover, .home-form .gform_submit_button:hover {
+.home-form .gform_next_button:hover,.home-form .gform_previous_button:hover, .home-form input[type="submit"]:hover {
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
@@ -731,14 +748,14 @@ header .intro-image{
         text-align:center;
         font-size: 18px;
         font-weight: 400;
-        padding:80px 0px;
+        padding:60px 0px 20px 0px;
     }
 }
 
 /*footer*/
 footer {
     background-color:#000000;
-    padding-top:100px;
+    padding-top:150px;
 }
 img {
     padding:5px 15px;
@@ -1270,21 +1287,21 @@ section#about{
 }
 .contact-quotation{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:14px;
+    font-size:20px;
     color:#ffffff;
-    text-align: justify; !important;   
+    text-align: justify !important;   
 }
 .other-question{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:14px;
-    color:#BBBBBB;
+    font-size:20px;
+    color:#000000;
     text-align: justify !important;   
 }
 /*setting halaman contact quotation*/
 .contact-quotation .gform_page_footer{
     border:none !important;
 }
-.contact-quotation .gform_next_button, .contact-quotation .gform_previous_button, .contact-quotation .gform_submit_button {
+.contact-quotation .gform_next_button, .contact-quotation .gform_previous_button, .contact-quotation input[type="submit"] {
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
@@ -1297,23 +1314,38 @@ section#about{
     margin:0px 30px 0px 0px;
 }
 
-.contact-quotation .gform_next_button:hover, .contact-quotation .gform_previous_button:hover, .contact-quotation .gform_submit_button:hover {
+.contact-quotation .gform_next_button:hover, .contact-quotation .gform_previous_button:hover, .contact-quotation input[type="submit"]:hover {
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
     padding: 10px 20px 10px 20px;
-    border: solid #00B4FF 3px;
+    border: solid #101010 3px;
     text-decoration: none;
     background-color:#00B4FF;
-    color:#ffffff;
+    color:#101010;
     margin:0px 30px 0px 0px;
 }
-.contact-quotation .ginput_container input{
+.contact-quotation .ginput_container input, .contact-quotation .ginput_container textarea{
     color:#ffffff;
     background-color:transparent;
     border:none;
     font-size:20px !important;
+}
+.contact-quotation .ginput_container input{
+    animation: blink-quotation 1s infinite;
+    border-left: transparent solid 1px;
+    margin:5px;
+}
+.contact-quotation .ginput_counter{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#EEEEEE !important;
+}
+@keyframes blink-quotation {
+  50% {border-left: 1px solid #ffffff;}
+}
+.contact-quotation .ginput_container input:focus, .contact-quotation .ginput_container textarea:focus{
+    animation: none;
 }
 .contact-quotation .gfield_required{
     display:none;
@@ -1322,37 +1354,145 @@ section#about{
 .other-question .gform_page_footer{
     border:none !important;
 }
-.other-question .gform_next_button, .other-question .gform_previous_button, .other-question .gform_submit_button {
+.other-question .gform_next_button, .other-question .gform_previous_button, .other-question input[type="submit"] {
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
     background-color:transparent;
-    color: #BBBBBB;
+    color: #000000;
     padding: 10px 20px 10px 20px;
-    border: solid #ffffff 3px;
+    border: solid #000000 3px;
     text-decoration: none;
     margin:0px 30px 0px 0px;
 }
 
-.other-question .gform_next_button:hover, .other-question .gform_previous_button:hover, .other-question .gform_submit_button:hover {
+.other-question .gform_next_button:hover, .other-question .gform_previous_button:hover, .other-question input[type="submit"]:hover {
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
     padding: 10px 20px 10px 20px;
-    border: solid #00B4FF 3px;
+    border: solid #000000 3px;
     text-decoration: none;
     background-color:#00B4FF;
-    color:#BBBBBB;
+    color:#000000;
     margin:0px 30px 0px 0px;
 }
-.other-question .ginput_container input{
-    color:#BBBBBB;
+.other-question .ginput_container input, .other-quotation .ginput_container textarea{
+    color:#000000;
     background-color:transparent;
     border:none;
-    font-size:24px !important;
+    animation: blink-other 1s infinite;
+    border-left: transparent solid 1px;
+    margin:5px;
+    font-size:20px !important;
+}
+@keyframes blink-other {
+  50% {border-left: 1px solid #000000;}
+}
+.other-question .ginput_container input:focus, .other-question .ginput_container textarea:focus{
+    animation: none;
 }
 .other-question .gfield_required{
     display:none;
+}
+
+.panel, .panel-default>.panel-heading, .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+    background:transparent;
+    color:#ffffff;
+    border:none;
+}
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    
+    /*required for proper track sizing in FF*/
+    width: 300px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+.panel-title a:focus, a:hover{
+    text-decoration:none;
 }

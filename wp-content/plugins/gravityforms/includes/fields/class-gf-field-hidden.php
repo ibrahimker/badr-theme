@@ -38,7 +38,7 @@ class GF_Field_Hidden extends GF_Field {
 		$field_type      = $is_entry_detail || $is_form_editor ? 'text' : 'hidden';
 		$class_attribute = $is_entry_detail || $is_form_editor ? '' : "class='gform_hidden'";
 
-		return sprintf( "<input name='input_%d' id='%s' autofocus type='$field_type' {$class_attribute} value='%s' %s/>", $id, $field_id, esc_attr( $value ), $disabled_text );
+		return sprintf( "<input name='input_%d' id='%s' type='$field_type' {$class_attribute} value='%s' %s/>", $id, $field_id, esc_attr( $value ), $disabled_text );
 	}
 
 	public function get_field_content( $value, $force_frontend_label, $form ) {

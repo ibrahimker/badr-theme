@@ -74,7 +74,7 @@ get_header(); ?>
 					</div>
 					<hr class="bates">
 				</div>
-				<?php echo do_shortcode('[wpdevart_facebook_comment width="100%" bg_color="#CCCCCC" animation_effect="random" count_of_comments="2" ]'); ?>
+				<?php $withcomments = true; comments_template();?>
 				<div class="navigation"><p><?php posts_nav_link(); ?></p></div>
 			<?php endwhile; // End of the loop. ?>
 

@@ -39,7 +39,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-4">
-                    <p><a href="#">Sitemap</a> | <a href="#">Contact</a></p>
+                    <p><a href="#">Sitemap</a> | <a href="<?php echo get_site_url() ?>/contact">Contact</a></p>
                 </div>
                 <div class="col-md-8" style="text-align:right;">
                     <p class="language">English</p>

@@ -11,11 +11,7 @@
  *
  * @package Badr Interactive
  */
-
 get_header(); ?>
-<script type="text/javascript">
-    jQuery(document).ready(function($) { $( ".ginput_container input" ).trigger( "focus" ); });
-</script>
 <script type="text/javascript">
  $(document).ready(function() {
   $('#fullpage').fullpage({
@@ -23,10 +19,11 @@ get_header(); ?>
    'css3': true,
    'autoScrolling': true,
    'scrollBar': true,
-   'fitToSection':false,
+   'fitToSection':true,
    'loopTop':true,
    'normalScrollElements':'#section4',
    'responsiveWidth':768,
+   'responsiveHeight':500,
    'navigation': true,
    'navigationPosition': 'right',
    'slidesNavigation': true,

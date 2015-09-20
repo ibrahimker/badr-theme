@@ -145,6 +145,12 @@ function add_gravatar_class($class) {
 	$class = str_replace("avatar avatar-72", "avatar avatar-72 img-circle", $class);
 	return $class;
 }
+//Add class di image works
+add_filter('get_the_post_thumbnail','add_works_class');
+function add_works_class($class) {
+	$class = str_replace("attachment-300x300 wp-post-image", "attachment-300x300 wp-post-image img-responsive", $class);
+	return $class;
+}
 // add new meta field di plugin projects
 function new_projects_fields( $fields ) {
 	$fields['platform'] = array(
@@ -200,4 +206,10 @@ require get_template_directory() . '/inc/popular-posts.php';
  * Load Wordpress Breadcrumb compatibility file. Konfigurasi untuk pluginnya
  */
 require get_template_directory() . '/inc/breadcrumb.php';
+
+/**
+ * Load Konfigurasi slider di gravity form
+ */
+require get_template_directory() . '/inc/gravityform.php';
+require get_template_directory() . '/inc/gravityform2.php';
 

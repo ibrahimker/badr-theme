@@ -23,8 +23,14 @@
     <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_directory'); ?>/css/jquery.fullPage.css" />
     <!-- Custom CSS -->
     <link href="<?php echo bloginfo('template_directory'); ?>/css/agency.css" rel="stylesheet">
-    <!-- Hover -->
+    <!-- Slick -->
+    <link href="<?php echo bloginfo('template_directory'); ?>/css/slick.css" rel="stylesheet">
+    <link href="<?php echo bloginfo('template_directory'); ?>/css/slick-theme.css" rel="stylesheet">
+    <!-- hover -->
     <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/hover.min.css">
+    <!-- Slider -->
+    <link href="<?php echo bloginfo('template_directory'); ?>/css/nouislider.min.css" rel="stylesheet">
+    <link href="<?php echo bloginfo('template_directory'); ?>/css/nouislider.pips.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -38,16 +44,16 @@
         <!-- jQuery -->
         <script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
         <script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/jquery-ui.min.js"></script>
-
         <!-- Bootstrap Core JavaScript -->
         <script src="<?php echo bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
-
         <!-- Smooth Scroll -->
         <script src="<?php echo bloginfo('template_directory'); ?>/js/smooth-scroll.js"></script>
-
+        <!-- Slick -->
+        <script src="<?php echo bloginfo('template_directory'); ?>/js/slick.min.js"></script>
+        <!-- Slider -->
+        <script src="<?php echo bloginfo('template_directory'); ?>/js/nouislider.min.js"></script>
         <!-- fullpage -->
         <script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/jquery.fullPage.min.js"></script>
-        
         <!-- Custom Theme JavaScript -->
         <script src="<?php echo bloginfo('template_directory'); ?>/js/agency.js"></script>
         <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -60,6 +66,14 @@
     </head>
 
     <body id="page-top" class="index">
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1623311071261093";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     	<!-- Navigation -->
     	<nav class="navbar navbar-default navbar-fixed-top">
     		<div class="container">
