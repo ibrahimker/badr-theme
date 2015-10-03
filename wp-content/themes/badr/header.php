@@ -42,8 +42,10 @@
         <![endif]-->
 
         <!-- jQuery -->
-        <script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/jquery-ui.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!--<script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+        //<script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/jquery-ui.min.js"></script>-->
         <!-- Bootstrap Core JavaScript -->
         <script src="<?php echo bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
         <!-- Smooth Scroll -->
@@ -100,7 +102,7 @@
                    </ul>
 
                    <ul class="nav navbar-nav navbar-right">
-                    <a href="<?php echo get_site_url() ?>/contact"><button type="button" class="btn btn-badr navbar-btn">CONTACT</button></a>
+                    <a href="<?php echo get_site_url() ?>/index.php/contact"><button type="button" class="btn btn-badr navbar-btn">CONTACT</button></a>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

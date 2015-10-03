@@ -41,7 +41,7 @@ get_header(); ?>
                     <div class="col-md-8">
                         <div class="intro-lead-in">We Are Badr Interactive</div>
                         <div class="intro-heading">We help the visionaries to make their vision comes to life.</div>
-                        <a href="works.html" class="btn btn-badr intro-works">WORKS</a>
+                        <a href="<?php echo get_site_url() ?>/index.php/works" class="btn btn-badr intro-works">WORKS</a>
                     </div>
                     <div class="col-md-4">
                         <img src="<?php echo bloginfo('template_directory'); ?>/img/header/img_smartphone.png" class="hvr-sink intro-image img-responsive" alt="">

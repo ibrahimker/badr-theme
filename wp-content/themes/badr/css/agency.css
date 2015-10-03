@@ -401,9 +401,10 @@ body {
 
 /*header section*/
 header .intro-lead-in {
+    padding-top:35%;
+    text-align:center;
     margin-bottom: 25px;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
     font-size: 25px;
     font-weight: 700;
 }
@@ -537,7 +538,7 @@ header .intro-image{
     margin-bottom: 25px;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align:center;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     float:center !important;
 }
@@ -546,7 +547,7 @@ header .intro-image{
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align:center;
-    font-size: 22px;
+    font-size: 18px;
     float:center !important;
 }
 
@@ -554,7 +555,7 @@ header .intro-image{
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align:center;
-    font-size: 22px;
+    font-size: 18px;
     float:center !important;
 }
 
@@ -562,7 +563,7 @@ header .intro-image{
     margin-bottom: 25px;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align:center;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     float:center !important;
 }
@@ -571,7 +572,7 @@ header .intro-image{
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align:center;
-    font-size: 22px;
+    font-size: 18px;
     float:center !important;
 }
 
@@ -579,7 +580,7 @@ header .intro-image{
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align:center;
-    font-size: 22px;
+    font-size: 18px;
     float:center !important;
 }
 
@@ -681,9 +682,9 @@ header .intro-image{
 /*gravity form di home*/
 .home-form{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:20px;
+    font-size:16px;
     color:#ffffff;
-    text-align: justify !important;
+    text-align: center !important;
 }
 .home-form .gfield_required{
     display:none;
@@ -692,7 +693,7 @@ header .intro-image{
     color:#ffffff;
     background-color:transparent;
     border:none;
-    font-size:20px !important;
+    font-size:16px !important;
 }
 .home-form .ginput_container input{
     animation: blink-home 1s infinite;
@@ -706,7 +707,7 @@ header .intro-image{
     animation: none;
 }
 .home-form label{
-    font-size:24px !important;
+    font-size:18px !important;
 }
 .home-form .gf_page_steps, .home-form .gform_page_footer{
     border:none !important;
@@ -750,6 +751,21 @@ header .intro-image{
         font-weight: 400;
         padding:60px 0px 20px 0px;
     }
+    .home-form {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size:20px;
+        color:#ffffff;
+        text-align: justify !important;
+    }
+    .home-form .ginput_container input, .home-form .ginput_container textarea{
+        color:#ffffff;
+        background-color:transparent;
+        border:none;
+        font-size:20px !important;
+    }
+    .home-form label{
+        font-size:24px !important;
+    }
 }
 
 /*footer*/
@@ -775,7 +791,15 @@ footer a{
     color:#555555;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+.footer-right{
+    padding-top:20px;
+}
+@media(min-width:768px) {
+.footer-right{
+    padding-top:none;
+    text-align:right;
+}
+}
 /*untuk halaman works*/
 section#portfolio{
     background-color:#000000;
@@ -827,12 +851,12 @@ section#works{
 }
 
 #about-header h1 {
-    margin-bottom: 25px;
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
-    font-size: 25px;
-    font-weight: 700;
-}
+        padding:25% 5% 20% 5%;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        font-size: 24px;
+        font-weight: 700;
+    }
 
 @media(min-width:768px) {
     #about-header h1 {
@@ -943,6 +967,21 @@ section#about{
     color:#ffffff;
     text-transform:none;
     font-weight:400;
+    font-size:24px;
+    text-align:center;
+    padding:0px 50px 30px 50px;
+}
+.comp-approach-header2{
+    color:#ffffff;
+    font-weight:300;
+    font-size:20px;
+    text-align:center;
+}
+@media(min-width:768px){
+    #comp-approach-header{
+    color:#ffffff;
+    text-transform:none;
+    font-weight:400;
     font-size:36px;
     text-align:center;
     padding:0px 50px 30px 50px;
@@ -951,6 +990,8 @@ section#about{
     color:#ffffff;
     font-weight:300;
     font-size:20px;
+    text-align:left;
+}
 }
 .comp-approach-desc{
     color:#ffffff;
@@ -961,10 +1002,15 @@ section#about{
 }
 /*halaman about bagian values*/
 .comp-val-num{
+    display:none;
+}
+@media(min-width:768px){
+    .comp-val-num{
     color:#ffffff;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align:end;
     padding-top:5px;
+}
 }
 .comp-val-bates{
     border-color:#ffffff;
@@ -995,14 +1041,14 @@ section#about{
 }
 
 #careers-header h1 {
-    margin-bottom: 25px;
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align:left;
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing:1.2px;
-}
+        padding:25% 5% 20% 5%;
+        letter-spacing:1.2px;  
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-align:center;
+        text-transform: none;
+        font-size: 24px;
+        font-weight: 400;
+    }
 
 @media(min-width:768px) {
     #careers-header h1 {
@@ -1105,6 +1151,11 @@ section#about{
 }
 #popular-posts{
     padding-top:40px;
+}
+@media(max-width:768px){
+#sidebar{
+    display:none;
+}
 }
 .sidebar-header{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1493,6 +1544,54 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
     background: #ccc;
 }
-.panel-title a:focus, a:hover{
+.panel-title a:focus, .panel-title a:hover{
     text-decoration:none;
+}
+.esg-navigationbutton.esg-right,.esg-navigationbutton.esg-left {
+    border:none !important;
+    background-color:transparent !important;
+}
+.esg-navigationbutton.esg-filterbutton.esg-pagination-button, .esg-pagination{
+    border:none !important;
+    background-color:transparent !important;
+    color:#00B4FF;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:18px;
+}
+.esg-navigationbutton.esg-filterbutton.esg-pagination-button.selected{
+    border:none !important;
+    background-color:transparent !important;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:18px;
+}
+.esg-sorting-select{
+    color:black;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-radius: 4px;
+}
+.gfield_error{
+    background-color:transparent !important;
+    border:none !important;
+}
+.gfield_error .gfield_label{
+    color:#a94442 !important;
+}
+.gfield_error .ginput_container input{
+    border:none !important;
+}
+.validation_error{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:18px !important;
+    color:#a94442 !important;
+    background-color:#f2dede !important;
+    border:0px !important;
+    border-radius:10px !important;
+    padding:1em !important;
+    width:100% !important;
+    font-weight:400 !important;
+    margin-bottom:0px !important;
+}
+.validation_message{
+    color:#a94442 !important;
+    margin-bottom:0px !important;
 }

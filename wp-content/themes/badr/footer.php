@@ -17,31 +17,31 @@
         </div>
         <div class="col-md-9">
             <div class="row">
-                <div class="col-md-4 icon">
+                <div class="col-md-4 col-xs-12 icon">
                     <a href="https://www.facebook.com/badrinteractive">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/Icons/icon_facebook_footer.png"/>
+                    <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_facebook_footer.png"/>
                     </a>
                     <a href="https://twitter.com/badrinteractive">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/Icons/icon_twitter_footer.png"/>
+                    <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_twitter_footer.png"/>
                     </a>
                     <a href="https://plus.google.com/113692107235116589684/videos">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/Icons/icon_googleplus_footer.png"/>
+                    <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_googleplus_footer.png"/>
                     </a>
                     <a href="">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/Icons/icon_instagram_footer.png"/>
+                    <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_instagram_footer.png"/>
                     </a>
                 </div>
-                <div class="col-md-8" style="text-align:right;">
-                    <a href="<?php echo get_site_url() ?>/contact/other-question" class="btn btn-badr">Ask Anything</a>
-                    <a href="<?php echo get_site_url() ?>/contact/quotation" class="btn btn-badr">Request a Quotation</a>
+                <div class="col-md-8 col-xs-12 footer-right">
+                    <a href="<?php echo get_site_url() ?>/index.php/contact/other-question" class="btn btn-badr">Ask Anything</a>
+                    <a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-badr">Request a Quotation</a>
                 </div>
             </div>
             <hr>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12">
                     <p><a href="#">Sitemap</a> | <a href="<?php echo get_site_url() ?>/contact">Contact</a></p>
                 </div>
-                <div class="col-md-8" style="text-align:right;">
+                <div class="col-md-8 col-xs-12 footer-right">
                     <p class="language">English</p>
                 </div>
             </div>

@@ -63,7 +63,7 @@ get_header();
                                     <p class="comp-people-desc">Here are some quickfacts about people in Badr Interactive :</p>
                                     <div class="col-md-3">
                                         <div class="row">
-                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/Icons/icon_fulltimetalent_about.png"/ class="center-block comp-people-icon">
+                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_fulltimetalent_about.png"/ class="center-block comp-people-icon">
                                         </div>
                                         <div class="row">
                                             <h2 class="comp-people-num">26</h2>
@@ -74,7 +74,7 @@ get_header();
                                     </div>
                                     <div class="col-md-3">
                                         <div class="row">
-                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/Icons/icon_projectdelivered_people.png" class="center-block comp-people-icon"/>
+                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_projectdelivered_people.png" class="center-block comp-people-icon"/>
                                         </div>
                                         <div class="row">
                                             <h2 class="comp-people-num">60</h2>
@@ -85,7 +85,7 @@ get_header();
                                     </div>
                                     <div class="col-md-3">
                                         <div class="row">
-                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/Icons/icon_workhours.png" class="center-block comp-people-icon"/>
+                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_workhours.png" class="center-block comp-people-icon"/>
                                         </div>
                                         <div class="row">
                                             <h2 class="comp-people-num">12k</h2>
@@ -96,7 +96,7 @@ get_header();
                                     </div>
                                     <div class="col-md-3">
                                         <div class="row">
-                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/Icons/icon_fastresponse_about.png" class="center-block comp-people-icon"/>
+                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_fastresponse_about.png" class="center-block comp-people-icon"/>
                                         </div>
                                         <div class="row">
                                             <h2 class="comp-people-num">8 hrs</h2>

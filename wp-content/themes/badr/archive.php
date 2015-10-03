@@ -64,7 +64,7 @@ get_header(); ?>
 		</div>
 		<div class="col-md-1"></div>
 		<!-- sayap kanan -->
-		<div class="col-md-3">
+		<div class="col-md-3" id="sidebar">
 			<div class="row" id="search-box">
 				<?php get_search_form( true ); ?>
 			</div>

@@ -2,41 +2,10 @@
 get_header();
 ?>
 <style>
-	/*panah fullpage*/
-	.fp-controlArrow.fp-prev {
-		left: -35px;
-		background-position: left center;
-	}
-	.fp-controlArrow.fp-next {
-		background-position: left center;
-	}
-	/*portfolio*/
-	#portfolio-container-image, .portfolio-item{
-		height: 220px;
-		width: 280px;
-		position: relative;
-	}
-	#portfolio-nama {
-		z-index: 100;
-		display:table;    
-		position: relative;
-		color: white;    
-		font-size: 18px;
-		line-height: 1.3;
-		font-weight: bold;
-		left: 30px;    
-		bottom: 60px;
-		width:70%;
-	}
-	#portfolio-container-image img{
-		padding:0px;
-		width:275px;
-		height:225px;
-	}
 	.slick-prev
 	{
 		left: -25px;
-		background: url("../wp-content/themes/badr/img/Icons/icon_arrowleft_work.png") no-repeat;
+		background: url("../wp-content/themes/badr/img/icons/icon_arrowleft_work.png") no-repeat;
 	}
 	.slick-prev:before
 	{
@@ -46,12 +15,29 @@ get_header();
 	.slick-next
 	{
 		right: -25px;
-		background: url("../wp-content/themes/badr/img/Icons/icon_arrowright_work.png") no-repeat;
+		background: url("../wp-content/themes/badr/img/icons/icon_arrowright_work.png") no-repeat;
 	}
 	.slick-next:before
 	{
 		content: ' ';
 	}
+.esg-navigationbutton.esg-right,.esg-navigationbutton.esg-left {
+    border:none !important;
+    background-color:transparent !important;
+}
+.esg-navigationbutton.esg-filterbutton.esg-pagination-button, .esg-pagination{
+    border:none !important;
+    background-color:transparent !important;
+    color:#00B4FF;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:18px;
+}
+.esg-navigationbutton.esg-filterbutton.esg-pagination-button.selected{
+    border:none !important;
+    background-color:transparent !important;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:18px;
+}
 </style>
 <?php if(is_singular('project')) : ?>
 	<script type="text/javascript">
@@ -113,7 +99,7 @@ get_header();
 						<div>&nbsp;</div>
 					</div>
 					<div class="row">
-						<a href="<?php echo get_site_url() ?>/contact/quotation" class="btn btn-badr">Request a Quotation</a>
+						<a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-badr">Request a Quotation</a>
 						<div>&nbsp;</div>
 					</div>
 				</div>
