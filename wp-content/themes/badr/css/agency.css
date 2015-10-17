@@ -33,6 +33,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
+    text-decoration: none;
 }
 
 a {
@@ -719,7 +720,9 @@ header .intro-image{
     border-radius: 30px;
     background-color:transparent;
     color: #00B4FF;
-    padding: 10px 30px 10px 30px;
+    padding: 7px 35px;
+    font-size:14px;
+    text-transform: uppercase;
     border: solid #00B4FF 3px;
     text-decoration: none;
     margin:0px 30px 0px 0px;
@@ -730,7 +733,9 @@ header .intro-image{
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
-    padding: 10px 30px 10px 30px;
+    padding: 7px 35px;
+    font-size:14px;
+    text-transform: uppercase;
     border: solid #00B4FF 3px;
     text-decoration: none;
     background-color:#00B4FF;
@@ -771,7 +776,7 @@ header .intro-image{
 /*footer*/
 footer {
     background-color:#000000;
-    padding-top:150px;
+    padding-top:50px;
 }
 img {
     padding:5px 15px;
@@ -796,7 +801,7 @@ footer a{
 }
 @media(min-width:768px) {
 .footer-right{
-    padding-top:none;
+    padding-top:0px;
     text-align:right;
 }
 }
@@ -1104,10 +1109,20 @@ section#about{
 #blog{
     padding:30px 0px;
 }
+.head-post{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#00B4FF;
+    font-weight:700;
+    font-size:26px;
+}
+.head-post:hover{
+    text-decoration: none;
+}
 .head-blog{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color:#BBBBBB;
     font-weight:400;
+    padding-top:30px;
     padding-bottom: 30px;
 }
 .post-thumbnail{
@@ -1117,21 +1132,27 @@ section#about{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:bold;
     color:#000000;
-    padding-top:15px;
+    padding:0px 0px;
+    font-size:18px;
+    line-height:2.5;
+}
+.blog-author-name:hover{
+    text-decoration: none;
 }
 .blog-posts-date{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color:#BBBBBB;
-    line-height:0.5;
+    line-height:1;
 }
 .tags-title {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:bold;
+    padding-bottom:10px;
     color:#000000;
     line-height: 0.5;
 }
 #search-box{
-    padding:15px0 px;
+    padding:30px 0px;
 }
 #search-box input{
     background-color: transparent;
@@ -1227,7 +1248,7 @@ section#about{
     border: none;
     width: 50px;
     height: 101px;
-    background: url("../img/Icons/icon_previousactive_home.png") no-repeat;
+    background: url("../img/icons/icon_previousactive_home.png") no-repeat;
     background-position: right center;
     cursor: pointer;
 }
@@ -1236,7 +1257,7 @@ section#about{
     border: none;
     width: 50px;
     height: 101px;
-    background: url("../img/Icons/icon_nextactive_home.png") no-repeat;
+    background: url("../img/icons/icon_nextactive_home.png") no-repeat;
     background-position: left center;
     cursor: pointer;
 }
@@ -1345,7 +1366,7 @@ section#about{
 .other-question{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:20px;
-    color:#000000;
+    color:#00B4FF;
     text-align: justify !important;   
 }
 /*setting halaman contact quotation*/
@@ -1359,7 +1380,8 @@ section#about{
     border-radius: 30px;
     background-color:transparent;
     color: #ffffff;
-    padding: 10px 20px 10px 20px;
+    font-size:14px;
+    padding: 7px 35px;
     border: solid #ffffff 3px;
     text-decoration: none;
     margin:0px 30px 0px 0px;
@@ -1370,7 +1392,8 @@ section#about{
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
-    padding: 10px 20px 10px 20px;
+    font-size:14px;
+    padding: 7px 35px;
     border: solid #101010 3px;
     text-decoration: none;
     background-color:#00B4FF;
@@ -1411,9 +1434,10 @@ section#about{
     -moz-border-radius: 30;
     border-radius: 30px;
     background-color:transparent;
-    color: #000000;
-    padding: 10px 20px 10px 20px;
-    border: solid #000000 3px;
+    color: #00B4FF;
+    font-size:14px;
+    padding: 7px 35px;
+    border: solid #00B4FF 3px;
     text-decoration: none;
     margin:0px 30px 0px 0px;
 }
@@ -1423,15 +1447,16 @@ section#about{
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
-    padding: 10px 20px 10px 20px;
-    border: solid #000000 3px;
+    padding: 7px 35px;
+    font-size:14px;
+    border: solid #00B4FF 3px;
     text-decoration: none;
     background-color:#00B4FF;
-    color:#000000;
+    color:#FFFFFF;
     margin:0px 30px 0px 0px;
 }
 .other-question .ginput_container input, .other-quotation .ginput_container textarea{
-    color:#000000;
+    color:#00B4FF;
     background-color:transparent;
     border:none;
     animation: blink-other 1s infinite;
@@ -1440,7 +1465,7 @@ section#about{
     font-size:20px !important;
 }
 @keyframes blink-other {
-  50% {border-left: 1px solid #000000;}
+  50% {border-left: 1px solid #00B4FF;}
 }
 .other-question .ginput_container input:focus, .other-question .ginput_container textarea:focus{
     animation: none;
@@ -1448,7 +1473,10 @@ section#about{
 .other-question .gfield_required{
     display:none;
 }
-
+.gform_confirmation_message{
+    padding:20px;
+    line-height: 1.1;
+}
 .panel, .panel-default>.panel-heading, .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
     background:transparent;
     color:#ffffff;
@@ -1458,49 +1486,48 @@ section#about{
 input[type=range] {
     /*removes default webkit styles*/
     -webkit-appearance: none;
-    
     /*fix for FF unable to apply focus style bug */
     border: 1px solid white;
-    
     /*required for proper track sizing in FF*/
     width: 300px;
+    cursor:pointer;
 }
 input[type=range]::-webkit-slider-runnable-track {
     width: 300px;
-    height: 5px;
-    background: #ddd;
+    height: 10px;
+    background: #555;
     border: none;
     border-radius: 3px;
 }
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
-    height: 16px;
-    width: 16px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
-    background: goldenrod;
-    margin-top: -4px;
+    background: #00B4FF;
+    margin-top: -8px;
 }
 input[type=range]:focus {
     outline: none;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
+    background: #555;
 }
 
 input[type=range]::-moz-range-track {
     width: 300px;
-    height: 5px;
-    background: #ddd;
+    height: 10px;
+    background: #555;
     border: none;
     border-radius: 3px;
 }
 input[type=range]::-moz-range-thumb {
     border: none;
-    height: 16px;
-    width: 16px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
-    background: goldenrod;
+    background: #00B4FF;
 }
 
 /*hide the outline behind the border*/
@@ -1524,25 +1551,28 @@ input[type=range]::-ms-track {
     color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-    background: #777;
+    background: #555;
     border-radius: 10px;
 }
 input[type=range]::-ms-fill-upper {
-    background: #ddd;
+    background: #555;
     border-radius: 10px;
 }
 input[type=range]::-ms-thumb {
     border: none;
-    height: 16px;
-    width: 16px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
-    background: goldenrod;
+    background: #00B4FF;
 }
 input[type=range]:focus::-ms-fill-lower {
-    background: #888;
+    background: #555;
 }
 input[type=range]:focus::-ms-fill-upper {
-    background: #ccc;
+    background: #555;
+}
+#output-amount, #output-amount2{
+    color:#ffffff;
 }
 .panel-title a:focus, .panel-title a:hover{
     text-decoration:none;
@@ -1554,15 +1584,19 @@ input[type=range]:focus::-ms-fill-upper {
 .esg-navigationbutton.esg-filterbutton.esg-pagination-button, .esg-pagination{
     border:none !important;
     background-color:transparent !important;
-    color:#00B4FF;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#555555 !important;
     font-size:18px;
 }
-.esg-navigationbutton.esg-filterbutton.esg-pagination-button.selected{
+.esg-navigationbutton.esg-filterbutton.esg-pagination-button.selected, .esg-navigationbutton.esg-filterbutton.esg-pagination-button:hover{
     border:none !important;
     background-color:transparent !important;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#00B4FF !important;
     font-size:18px;
+}
+.minimal-light .esg-navigationbutton *, .flat-dark .esg-navigationbutton *{
+    color:#00B4FF !important;
 }
 .esg-sorting-select{
     color:black;
@@ -1576,12 +1610,12 @@ input[type=range]:focus::-ms-fill-upper {
 .gfield_error .gfield_label{
     color:#a94442 !important;
 }
-.gfield_error .ginput_container input{
+.gfield_error .ginput_container input, .gfield_error .ginput_container textarea{
     border:none !important;
 }
 .validation_error{
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:18px !important;
+    font-size:16px !important;
     color:#a94442 !important;
     background-color:#f2dede !important;
     border:0px !important;
@@ -1593,5 +1627,115 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .validation_message{
     color:#a94442 !important;
-    margin-bottom:0px !important;
+    margin:0px !important;
+    padding:0px !important;
+}
+#section4{
+    height:auto !important;
+}
+/*button*/
+.btn-menu-contact {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #00B4FF;
+    padding: 8px 30px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+}
+
+.btn-menu-contact:hover {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 8px 30px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#ffffff;
+}
+.btn-footer-others {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #00B4FF;
+    padding: 8px 30px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+}
+
+.btn-footer-others:hover {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 8px 30px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#ffffff;
+}
+.btn-footer-quotation {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #00B4FF;
+    padding: 8px 35px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+}
+
+.btn-footer-quotation:hover {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 8px 35px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#ffffff;
+}
+.btn-contact-works {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    background-color:transparent;
+    color: #00B4FF;
+    padding: 8px 35px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+}
+
+.btn-contact-works:hover {
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 8px 35px;
+    border: solid #00B4FF 3px;
+    text-decoration: none;
+    background-color:#00B4FF;
+    color:#ffffff;
+}
+.bates-footer{
+    border-color:#555555;
+}
+#section5{
+    height:auto !important;
+}
+/*text area*/
+textarea{
+    height:120px !important;
+}
+.avatar img{
+    padding:5px;
 }

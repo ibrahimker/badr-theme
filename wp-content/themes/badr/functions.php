@@ -135,14 +135,14 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 // Changing excerpt more
 function new_excerpt_more($more) {
-	return '...';
+	return '';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
 //Buat gravatar jadi circular 
 add_filter('get_avatar','add_gravatar_class');
 function add_gravatar_class($class) {
-	$class = str_replace("avatar avatar-72", "avatar avatar-72 img-circle", $class);
+	$class = str_replace("avatar avatar-96", "avatar avatar-96 img-circle", $class);
 	return $class;
 }
 //Add class di image works
@@ -213,3 +213,14 @@ require get_template_directory() . '/inc/breadcrumb.php';
 require get_template_directory() . '/inc/gravityform.php';
 require get_template_directory() . '/inc/gravityform2.php';
 
+
+// Added custom validation for minimum characters count
+add_filter("gform_field_validation_1_6", "validate_chars_count", 10, 4);
+add_filter("gform_field_validation_1_8", "validate_chars_count", 10, 4);
+function validate_chars_count($result, $value, $form, $field){
+if (strlen($value) < 140) { //Minimum number of characters
+	$result["is_valid"] = false;
+	$result["message"] = "Please enter at least 140 characters.";
+}
+return $result;
+}

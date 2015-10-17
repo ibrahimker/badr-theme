@@ -21,23 +21,23 @@ get_header();
 	{
 		content: ' ';
 	}
-.esg-navigationbutton.esg-right,.esg-navigationbutton.esg-left {
-    border:none !important;
-    background-color:transparent !important;
-}
-.esg-navigationbutton.esg-filterbutton.esg-pagination-button, .esg-pagination{
-    border:none !important;
-    background-color:transparent !important;
-    color:#00B4FF;
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:18px;
-}
-.esg-navigationbutton.esg-filterbutton.esg-pagination-button.selected{
-    border:none !important;
-    background-color:transparent !important;
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:18px;
-}
+	.esg-navigationbutton.esg-right,.esg-navigationbutton.esg-left {
+		border:none !important;
+		background-color:transparent !important;
+	}
+	.esg-navigationbutton.esg-filterbutton.esg-pagination-button, .esg-pagination{
+		border:none !important;
+		background-color:transparent !important;
+		color:#00B4FF;
+		font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:18px;
+	}
+	.esg-navigationbutton.esg-filterbutton.esg-pagination-button.selected{
+		border:none !important;
+		background-color:transparent !important;
+		font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:18px;
+	}
 </style>
 <?php if(is_singular('project')) : ?>
 	<script type="text/javascript">
@@ -99,7 +99,7 @@ get_header();
 						<div>&nbsp;</div>
 					</div>
 					<div class="row">
-						<a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-badr">Request a Quotation</a>
+						<a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-badr">Request a project like this</a>
 						<div>&nbsp;</div>
 					</div>
 				</div>
@@ -114,7 +114,21 @@ get_header();
 						<div class="work-prev-link"><?php echo get_previous_post_link('%link','%title'); ?></div>
 					</div>
 					<div class="col-xs-2 col-md-2">
-						<a href="#works" class="btn btn-badr">Share this Projects</a>
+						<a href="#works" class="btn btn-badr" data-toggle="modal" data-target="#myModal">Share this Projects</a>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h5 class="modal-title" id="myModalLabel">Share to social media</h5>
+									</div>
+									<div class="modal-body">
+										<?php echo do_shortcode('[simple-social-share]'); ?>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-xs-5 col-md-5">
 						<p class="work-pagination-next">Next Project</p>

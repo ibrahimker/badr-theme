@@ -13,23 +13,23 @@
  */
 get_header(); ?>
 <script type="text/javascript">
- $(document).ready(function() {
-  $('#fullpage').fullpage({
-   'verticalCentered': false,
-   'css3': true,
-   'autoScrolling': true,
-   'scrollBar': true,
-   'fitToSection':true,
-   'loopTop':true,
-   'normalScrollElements':'#section4',
-   'responsiveWidth':768,
-   'responsiveHeight':500,
-   'navigation': true,
-   'navigationPosition': 'right',
-   'slidesNavigation': true,
-   'slidesNavPosition': 'bottom',
-});
-});
+   $(document).ready(function() {
+      $('#fullpage').fullpage({
+         'verticalCentered': false,
+         'css3': true,
+         'autoScrolling': true,
+         'scrollBar': true,
+         'fitToSection':true,
+         'loopTop':true,
+         'normalScrollElements': '#section4',
+         'responsiveWidth':768,
+         'responsiveHeight':500,
+         'navigation': true,
+         'navigationPosition': 'right',
+         'slidesNavigation': true,
+         'slidesNavPosition': 'bottom',
+     });
+  });
 </script>
 
 <div id="fullpage">
@@ -126,25 +126,23 @@ get_header(); ?>
         <section id="home5">
             <div class="container">
                 <div class="row">
-                   <div class="slide">
-                    <div class="col-md-2">
-                    </div>
+                 <div class="slide">
+                    <div class="col-md-2"></div>
                     <div class="col-md-8">
-                       <div class="row">
-                           <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
-                       </div>
-                       <div class="row">
-                        <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
-                    </div>
-                    <div class="row">
+                     <div class="row">
+                         <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
+                     </div>
+                     <div class="row">
+                         <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
+                     </div>
+                     <div class="row">
                         <p class="nama">John Travolta</p>
                     </div>
                     <div class="row">
                         <p class="jabatan">CEO of Volta Indonesia</p>
                     </div>
                 </div>
-                <div class="col-md-2">
-                </div>
+                <div class="col-md-2"></div>
             </div>
             <div class="slide"> Slide 2 </div>
             <div class="slide"> Slide 3 </div>
@@ -161,21 +159,73 @@ get_header(); ?>
                 <p class="contact">Talk to us</p>
             </div>
             <div class="row">
-                <!-- Change the width and height values to suit you best -->
-<!--                     <div class="typeform-widget" data-url="https://ibrahimker.typeform.com/to/EzIkFC" data-text="Contact Form Badr" style="width:100%;height:300px;"></div>
-                    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-                -->            
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>                </div>
-                    <div class="col-md-2"></div>
+                    <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
                 </div>
-                <div class="row">
-                    <p class="contact2">Wanna look around? Take your time <a href="<?php echo get_site_url() ?>/works" class="btn btn-badr">WORKS</a></p>
-                    
-                </div>
+                <div class="col-md-2"></div>
             </div>
-        </section>
-    </div>
+            <div class="row">
+                <p class="contact2">Wanna look around? Take your time <a href="<?php echo get_site_url() ?>/works" class="btn btn-contact-works">WORKS</a></p>                    
+            </div>
+        </div>
+    </section>
 </div>
-<?php get_footer(); ?>
+<div class="section" id="section5">
+    <footer>
+        <div class="container">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 icon">
+                        <a href="https://www.facebook.com/badrinteractive">
+                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_facebook_footer.png"/>
+                        </a>
+                        <a href="https://twitter.com/badrinteractive">
+                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_twitter_footer.png"/>
+                        </a>
+                        <a href="https://plus.google.com/113692107235116589684/videos">
+                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_googleplus_footer.png"/>
+                        </a>
+                        <a href="">
+                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_instagram_footer.png"/>
+                        </a>
+                    </div>
+                    <div class="col-md-8 col-xs-12 footer-right">
+                        <a href="<?php echo get_site_url() ?>/index.php/contact/other-question" class="btn btn-footer-others">Ask Anything</a>
+                        <a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-footer-quotation">Request a Quotation</a>
+                    </div>
+                </div>
+                <hr class="bates-footer">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <p><a href="#">Sitemap</a> | <a href="<?php echo get_site_url() ?>/contact">Contact</a></p>
+                    </div>
+                </div>
+                <hr class="bates-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                     <p class="copywright">Copyright &copy 2015 Badr Interactive Inc. All rights reserved.</p>
+                     <p>&nbsp;</p>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-1">
+         </div>
+     </div>
+ </footer>
+</div>
+</div>
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="<?php echo bloginfo('template_directory'); ?>/js/classie.js"></script>
+<script src="<?php echo bloginfo('template_directory'); ?>/js/cbpAnimatedHeader.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="<?php echo bloginfo('template_directory'); ?>/js/jqBootstrapValidation.js"></script>
+<script src="<?php echo bloginfo('template_directory'); ?>/js/contact_me.js"></script>
+<?php wp_footer(); ?>
+
+</body>
+</html>

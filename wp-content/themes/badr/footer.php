@@ -19,42 +19,40 @@
             <div class="row">
                 <div class="col-md-4 col-xs-12 icon">
                     <a href="https://www.facebook.com/badrinteractive">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_facebook_footer.png"/>
+                        <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_facebook_footer.png"/>
                     </a>
                     <a href="https://twitter.com/badrinteractive">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_twitter_footer.png"/>
+                        <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_twitter_footer.png"/>
                     </a>
                     <a href="https://plus.google.com/113692107235116589684/videos">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_googleplus_footer.png"/>
+                        <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_googleplus_footer.png"/>
                     </a>
                     <a href="">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_instagram_footer.png"/>
+                        <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_instagram_footer.png"/>
                     </a>
                 </div>
                 <div class="col-md-8 col-xs-12 footer-right">
-                    <a href="<?php echo get_site_url() ?>/index.php/contact/other-question" class="btn btn-badr">Ask Anything</a>
-                    <a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-badr">Request a Quotation</a>
+                    <a href="<?php echo get_site_url() ?>/index.php/contact/other-question" class="btn btn-footer-others">Ask Anything</a>
+                    <a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-footer-quotation">Request a Quotation</a>
                 </div>
             </div>
-            <hr>
+            <hr class="bates-footer">
             <div class="row">
                 <div class="col-md-4 col-xs-12">
                     <p><a href="#">Sitemap</a> | <a href="<?php echo get_site_url() ?>/contact">Contact</a></p>
                 </div>
-                <div class="col-md-8 col-xs-12 footer-right">
-                    <p class="language">English</p>
-                </div>
             </div>
-            <hr>
+            <hr class="bates-footer">
             <div class="row">
                 <div class="col-md-12">
-                 <p class="copywright">Copyright &copy 2015 Badr Interactive Inc. All rights reserved.</p>
-                 </div>
-            </div>
-        </div>
-        <div class="col-md-1">
-        </div>
-    </div>
+                   <p class="copywright">Copyright &copy 2015 Badr Interactive Inc. All rights reserved.</p>
+                   <p>&nbsp;</p>
+                </div>
+           </div>
+       </div>
+       <div class="col-md-1">
+       </div>
+   </div>
 </footer>
 <!-- Plugin JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>

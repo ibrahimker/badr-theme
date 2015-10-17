@@ -44,7 +44,7 @@ get_header();
 
 			<div class="col-md-8">
 
-				<p class="contact-footer-text">For media inquiries, general question, or others <a href="<?php echo get_site_url() ?>/index.php/contact/other-question"><img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_arrowright_circle_contact.png"/></a></p>
+				<p class="contact-footer-text">To request quotations <a href="<?php echo get_site_url() ?>/index.php/contact/quotation"><img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_arrowright_circle_contact.png"/></a></p>
 
 			</div>
 

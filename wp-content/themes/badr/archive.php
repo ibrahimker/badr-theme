@@ -25,11 +25,11 @@ get_header(); ?>
 					<div class="post">
 						<div class="row">
 							<div class="col-md-2">
-								<?php echo get_avatar( get_the_author_meta( 'ID' ), 72); ?> 
+								<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_avatar( get_the_author_meta( 'ID' )); ?></a> 
 							</div>
 							<div class="col-md-10">
 								<div class="row">
-									<p class="blog-author-name"><?php the_author(); ?></p>
+									<a class="blog-author-name" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a>
 									<p class="blog-posts-date"><?php the_date('j F Y'); ?></p>
 								</div>
 							</div>
@@ -38,25 +38,34 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'large' , array( 'class' => 'post-thumbnail' ) ); ?>
 						</div>
 						<div class="row">
-							<h2 class="head-post"><?php the_title(); ?></h2>
+							<a class="head-post" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						</div>
 						<div class="row">
 							<div class="post-content">
-								<p><?php the_excerpt(); ?></p>
+								<p><?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>"> Continue Reading</a></p>
 							</div>
 						</div>
 						<div class="row">
+							<div>&nbsp;</div>
 							<p><div class="tags-title">Tags</div><?php the_category(' '); ?></p>
 							<div>&nbsp;</div>
 						</div>
 						<div class="row">
-							<a href="<?php the_permalink(); ?>" type="button" class="btn btn-badr navbar-btn">Continue Reading</a>
+							<!-- <a href="<?php the_permalink(); ?>" type="button" class="btn btn-badr navbar-btn">Continue Reading</a> -->
 						</div>
 					</div>
 					<hr class="bates-post">
 				<?php endwhile; ?>
-
-				<?php posts_nav_link(); ?>
+				<div class="row">
+					<div class="col-md-3">
+						<?php previous_posts_link(); ?>
+					</div>
+					<div class="col-md-6">
+					</div>
+					<div class="col-md-3">
+						<?php next_posts_link(); ?>
+					</div>
+				</div>
 			<?php else : ?>
 				<h4>Nothing Found</h4>
 

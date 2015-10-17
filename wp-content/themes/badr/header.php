@@ -88,7 +88,7 @@
     					<span class="icon-bar"></span>
     				</button>
                     <a class="navbar-brand page-scroll" href="<?php echo get_site_url() ?>">
-                    <img class="hvr-grow" style="max-width:150px; margin-top: -7px;" src="<?php echo bloginfo('template_directory'); ?>/img/header/logo-badr.png">
+                    <img class="hvr-grow" style="max-width:150px;" src="<?php echo bloginfo('template_directory'); ?>/img/header/logo-badr.png">
                     </a>
                 </div>
 
@@ -102,7 +102,7 @@
                    </ul>
 
                    <ul class="nav navbar-nav navbar-right">
-                    <a href="<?php echo get_site_url() ?>/index.php/contact"><button type="button" class="btn btn-badr navbar-btn">CONTACT</button></a>
+                    <a href="<?php echo get_site_url() ?>/index.php/contact"><button type="button" class="btn btn-menu-contact navbar-btn">CONTACT</button></a>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
