@@ -1,17 +1,11 @@
 <?php
-/**
- * The template for displaying archive pages.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package Badr Interactive
- */
-
-get_header(); ?>
+/* Template Name: Blog Template */
+get_header();
+?>
 <section id="blog">
 	<div class="container">
 		<!-- sayap kiri -->
-		<div class="col-md-8">
+		<div class="col-md-6">
 			<div class="row">
 				<h1 class="head-blog">BLOG</h1>
 			</div>
@@ -25,7 +19,7 @@ get_header(); ?>
 					<div class="post">
 						<div class="row">
 							<div class="col-md-2">
-								<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_avatar( get_the_author_meta( 'ID' )); ?></a> 
+								<a class="avatar" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_avatar( get_the_author_meta( 'ID'),72); ?></a> 
 							</div>
 							<div class="col-md-10">
 								<div class="row">
@@ -42,16 +36,16 @@ get_header(); ?>
 						</div>
 						<div class="row">
 							<div class="post-content">
-								<p><?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>"> Continue Reading</a></p>
+								<p><?php the_excerpt(); ?> <!-- <a href="<?php the_permalink(); ?>"> Continue Reading</a> --></p>
 							</div>
 						</div>
 						<div class="row">
 							<div>&nbsp;</div>
-							<p><div class="tags-title">Tags</div><?php the_category(' '); ?></p>
+							<p><div class="tags-title">Tags</div><div class="tags-content"><?php the_category(' '); ?></div></p>
 							<div>&nbsp;</div>
 						</div>
 						<div class="row">
-							<!-- <a href="<?php the_permalink(); ?>" type="button" class="btn btn-badr navbar-btn">Continue Reading</a> -->
+							<a href="<?php the_permalink(); ?>" type="button" class="btn btn-blog-continue">Continue Reading</a>
 						</div>
 					</div>
 					<hr class="bates-post">
@@ -71,7 +65,7 @@ get_header(); ?>
 
 			<?php endif; ?>
 		</div>
-		<div class="col-md-1"></div>
+		<div class="col-md-3"></div>
 		<!-- sayap kanan -->
 		<div class="col-md-3" id="sidebar">
 			<div class="row" id="search-box">
@@ -87,7 +81,7 @@ get_header(); ?>
 				<hr class="sidebar-bates">
 			</div>
 			<ul class="popular-category">
-			<?php wp_list_categories('orderby=count&title_li=&hierarchical=0&number=10'); ?>
+				<?php wp_list_categories('orderby=name&title_li=&hierarchical=0&number=10'); ?>
 			</ul>
 		</div>
 	</div>

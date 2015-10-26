@@ -55,19 +55,19 @@ function wps_budget_field_input ( $input, $field, $value, $lead_id, $form_id ){
 		$css = isset( $field['cssClass'] ) ? $field['cssClass'] : ”;
 
 		return sprintf("<script>function outputUpdate(value) {
-			if(value == 1){
+			if(value == 0){
 				document.querySelector('#output-amount').value = 'From Rp 10.000.000';
 			}
-			else if (value == 2) {
+			else if (value == 1) {
 				document.querySelector('#output-amount').value = 'Up to Rp 20.000.000';
 			}
-			else if (value == 3) {
+			else if (value == 2) {
 				document.querySelector('#output-amount').value = 'Up to Rp 50.000.000';
 			}
-			else if (value == 4) {
+			else if (value == 3) {
 				document.querySelector('#output-amount').value = 'Up to Rp 100.000.000';
 			}
-			else if (value == 5) {
+			else if (value == 4) {
 				document.querySelector('#output-amount').value = 'Over Rp 100.000.000';
 			}
 			else{
@@ -76,7 +76,7 @@ function wps_budget_field_input ( $input, $field, $value, $lead_id, $form_id ){
 		}
 	</script>
 	<p><output for='amount' id='output-amount'>Up to Rp 50.000.000 </output></p>
-	<div class='ginput_container'><input type='range' min='0' max='5' value='3' step='1' id='amount' oninput='outputUpdate(value)' name='input_%s' id='%s' class='textarea gform_budget %s' $tabindex rows='10' cols='50'></div><div id='budget-range-min'></div>{$max_chars}", $field["id"], 'budget-'.$field['id'] , $field["type"] . ' ' . esc_attr($css) . ' ' . $field['size'] , esc_html($value));
+	<div class='ginput_container'><input type='range' min='0' max='4' value='2' step='1' id='amount' oninput='outputUpdate(value)' name='input_%s' id='%s' class='textarea gform_budget %s' $tabindex rows='10' cols='50'></div><div id='budget-range-min'></div>{$max_chars}", $field["id"], 'budget-'.$field['id'] , $field["type"] . ' ' . esc_attr($css) . ' ' . $field['size'] , esc_html($value));
 
 	}
 

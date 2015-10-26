@@ -38,19 +38,19 @@ function wps_timeframe_field_input ( $input, $field, $value, $lead_id, $form_id 
 		$css = isset( $field['cssClass'] ) ? $field['cssClass'] : ”;
 
 		return sprintf("<script>function outputUpdate2(value) {
-			if(value == 1){
+			if(value == 0){
 				document.querySelector('#output-amount2').value = 'Less than 2 months';
 			}
-			else if (value == 2) {
+			else if (value == 1) {
 				document.querySelector('#output-amount2').value = 'Up to 3 months';
 			}
-			else if (value == 3) {
+			else if (value == 2) {
 				document.querySelector('#output-amount2').value = 'Up to 6 months';
 			}
-			else if (value == 4) {
+			else if (value == 3) {
 				document.querySelector('#output-amount2').value = 'Up to 12 months';
 			}
-			else if (value == 5) {
+			else if (value == 4) {
 				document.querySelector('#output-amount2').value = 'More than 12 months';
 			}
 			else{
@@ -59,7 +59,7 @@ function wps_timeframe_field_input ( $input, $field, $value, $lead_id, $form_id 
 		}
 	</script>
 	<p><output for='amount' id='output-amount2'>Up to 3 months</output></p>
-	<div class='ginput_container'><input type='range' min='0' max='5' value='2' step='1' id='amount' oninput='outputUpdate2(value)' name='input_%s' id='%s' class='textarea gform_timeframe %s' $tabindex rows='10' cols='50'></div><div id='timeframe-range-min'></div>{$max_chars}", $field["id"], 'timeframe-'.$field['id'] , $field["type"] . ' ' . esc_attr($css) . ' ' . $field['size'] , esc_html($value));
+	<div class='ginput_container'><input type='range' min='0' max='4' value='1' step='1' id='amount' oninput='outputUpdate2(value)' name='input_%s' id='%s' class='textarea gform_timeframe %s' $tabindex rows='10' cols='50'></div><div id='timeframe-range-min'></div>{$max_chars}", $field["id"], 'timeframe-'.$field['id'] , $field["type"] . ' ' . esc_attr($css) . ' ' . $field['size'] , esc_html($value));
 
 	}
 

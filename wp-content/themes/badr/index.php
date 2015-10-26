@@ -13,23 +13,23 @@
  */
 get_header(); ?>
 <script type="text/javascript">
-   $(document).ready(function() {
-      $('#fullpage').fullpage({
-         'verticalCentered': false,
-         'css3': true,
-         'autoScrolling': true,
-         'scrollBar': true,
-         'fitToSection':true,
-         'loopTop':true,
-         'normalScrollElements': '#section4',
-         'responsiveWidth':768,
-         'responsiveHeight':500,
-         'navigation': true,
-         'navigationPosition': 'right',
-         'slidesNavigation': true,
-         'slidesNavPosition': 'bottom',
-     });
-  });
+ $(document).ready(function() {
+  $('#fullpage').fullpage({
+   'verticalCentered': false,
+   'css3': true,
+   'autoScrolling': true,
+   'scrollBar': true,
+   'fitToSection':true,
+   'loopTop':true,
+   'normalScrollElements': '#section4',
+   'responsiveWidth':768,
+   'responsiveHeight':500,
+   'navigation': true,
+   'navigationPosition': 'right',
+   'slidesNavigation': true,
+   'slidesNavPosition': 'bottom',
+});
+});
 </script>
 
 <div id="fullpage">
@@ -41,13 +41,13 @@ get_header(); ?>
                     <div class="col-md-8">
                         <div class="intro-lead-in">We Are Badr Interactive</div>
                         <div class="intro-heading">We help the visionaries to make their vision comes to life.</div>
-                        <a href="<?php echo get_site_url() ?>/index.php/works" class="btn btn-badr intro-works">WORKS</a>
+                        <a href="<?php echo get_site_url() ?>/index.php/works" class="btn btn-home-works intro-works">WORKS</a>
                     </div>
                     <div class="col-md-4">
                         <img src="<?php echo bloginfo('template_directory'); ?>/img/header/img_smartphone.png" class="hvr-sink intro-image img-responsive" alt="">
                     </div>
                 </div>
-                <div class="row intro-next">
+                <div class="row intro-next" style="padding-top:20px;">
                     <a href="#home2" class="page-scroll"><img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_mousescroll_home.png"/></a>
                 </div>
             </div>
@@ -126,16 +126,16 @@ get_header(); ?>
         <section id="home5">
             <div class="container">
                 <div class="row">
-                 <div class="slide">
+                   <div class="slide">
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                     <div class="row">
-                         <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
-                     </div>
-                     <div class="row">
-                         <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
-                     </div>
-                     <div class="row">
+                       <div class="row">
+                           <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
+                       </div>
+                       <div class="row">
+                           <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
+                       </div>
+                       <div class="row">
                         <p class="nama">John Travolta</p>
                     </div>
                     <div class="row">
@@ -174,47 +174,41 @@ get_header(); ?>
 <div class="section" id="section5">
     <footer>
         <div class="container">
-            <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 icon">
+                    <a href="https://www.facebook.com/badrinteractive">
+                        <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_facebook_footer.png"/>
+                    </a>
+                    <a href="https://twitter.com/badrinteractive">
+                        <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_twitter_footer.png"/>
+                    </a>
+                    <a href="https://plus.google.com/113692107235116589684/videos">
+                        <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_googleplus_footer.png"/>
+                    </a>
+                    <a href="">
+                        <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_instagram_footer.png"/>
+                    </a>
+                </div>
+                <div class="col-md-8 col-xs-12 footer-right">
+                    <a href="<?php echo get_site_url() ?>/index.php/contact/other-question" class="btn btn-footer-others">Ask Anything</a>
+                    <a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-footer-quotation">Request a Quotation</a>
+                </div>
             </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 icon">
-                        <a href="https://www.facebook.com/badrinteractive">
-                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_facebook_footer.png"/>
-                        </a>
-                        <a href="https://twitter.com/badrinteractive">
-                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_twitter_footer.png"/>
-                        </a>
-                        <a href="https://plus.google.com/113692107235116589684/videos">
-                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_googleplus_footer.png"/>
-                        </a>
-                        <a href="">
-                            <img src="<?php echo bloginfo('template_directory'); ?>/img/icons/icon_instagram_footer.png"/>
-                        </a>
-                    </div>
-                    <div class="col-md-8 col-xs-12 footer-right">
-                        <a href="<?php echo get_site_url() ?>/index.php/contact/other-question" class="btn btn-footer-others">Ask Anything</a>
-                        <a href="<?php echo get_site_url() ?>/index.php/contact/quotation" class="btn btn-footer-quotation">Request a Quotation</a>
-                    </div>
+            <hr class="bates-footer">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <p><a href="#">Sitemap</a> | <a href="<?php echo get_site_url() ?>/contact">Contact</a></p>
                 </div>
-                <hr class="bates-footer">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <p><a href="#">Sitemap</a> | <a href="<?php echo get_site_url() ?>/contact">Contact</a></p>
-                    </div>
-                </div>
-                <hr class="bates-footer">
-                <div class="row">
-                    <div class="col-md-12">
-                     <p class="copywright">Copyright &copy 2015 Badr Interactive Inc. All rights reserved.</p>
-                     <p>&nbsp;</p>
-                 </div>
-             </div>
-         </div>
-         <div class="col-md-1">
-         </div>
-     </div>
- </footer>
+            </div>
+            <hr class="bates-footer">
+            <div class="row">
+                <div class="col-md-12">
+                   <p class="copywright">Copyright &copy 2015 Badr Interactive Inc. All rights reserved.</p>
+                   <p>&nbsp;</p>
+               </div>
+           </div>
+       </div>
+   </footer>
 </div>
 </div>
 <!-- Plugin JavaScript -->

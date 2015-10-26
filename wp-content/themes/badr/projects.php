@@ -115,7 +115,7 @@ get_header();
 					</div>
 					<div class="col-xs-2 col-md-2">
 						<a href="#works" class="btn btn-badr" data-toggle="modal" data-target="#myModal">Share this Projects</a>
-						<!-- Modal -->
+						<!-- Start Modal -->
 						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
@@ -129,6 +129,7 @@ get_header();
 								</div>
 							</div>
 						</div>
+						<!-- End Modal -->
 					</div>
 					<div class="col-xs-5 col-md-5">
 						<p class="work-pagination-next">Next Project</p>

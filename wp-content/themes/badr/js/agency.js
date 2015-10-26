@@ -14,7 +14,13 @@ $(function() {
         event.preventDefault();
     });
 });
-
+// fade on scroll
+$(window).scroll(function(){
+    $(".about-header").css("opacity", 1 - $(window).scrollTop() / 400);
+  });
+$(window).scroll(function(){
+    $(".careers-header").css("opacity", 1 - $(window).scrollTop() / 400);
+  });
 // // Highlight the top nav as scrolling occurs
 // $('body').scrollspy({
 //     target: '.navbar-fixed-top'
@@ -25,3 +31,12 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+
+var url = window.location;
+// Will only work if string in href matches with location
+$('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+
+// Will also work for relative and absolute hrefs
+$('ul.nav a').filter(function() {
+    return this.href == url;
+}).parent().addClass('active');
