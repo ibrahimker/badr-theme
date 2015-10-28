@@ -19,7 +19,7 @@ get_header();
 					<div class="post">
 						<div class="row">
 							<div class="col-md-2">
-								<a class="avatar" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_avatar( get_the_author_meta( 'ID'),72); ?></a> 
+								<a class="avatar" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_avatar( get_the_author_meta( 'ID'),50); ?></a> 
 							</div>
 							<div class="col-md-10">
 								<div class="row">
@@ -41,11 +41,13 @@ get_header();
 						</div>
 						<div class="row">
 							<div>&nbsp;</div>
-							<p><div class="tags-title">Tags</div><div class="tags-content"><?php the_category(' '); ?></div></p>
+							<div class="col-md-6 blog-continue">
+								<a href="<?php the_permalink(); ?>" type="button">Continue Reading</a>
+							</div>
+							<div class="col-md-6">
+								<div class="tags-title">Tags <?php the_category(' '); ?> </div>
+							</div>
 							<div>&nbsp;</div>
-						</div>
-						<div class="row">
-							<a href="<?php the_permalink(); ?>" type="button" class="btn btn-blog-continue">Continue Reading</a>
 						</div>
 					</div>
 					<hr class="bates-post">

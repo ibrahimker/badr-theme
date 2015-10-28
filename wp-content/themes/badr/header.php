@@ -8,7 +8,6 @@
  *
  * @package Badr Interactive
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -24,8 +23,8 @@
     <!-- Custom CSS -->
     <link href="<?php echo bloginfo('template_directory'); ?>/css/agency.css" rel="stylesheet">
     <!-- Slick -->
-    <link href="<?php echo bloginfo('template_directory'); ?>/css/slick.css" rel="stylesheet">
-    <link href="<?php echo bloginfo('template_directory'); ?>/css/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
     <!-- hover -->
     <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/hover.min.css">
     <!-- Slider -->
@@ -52,7 +51,7 @@
         <!-- Smooth Scroll -->
         <script src="<?php echo bloginfo('template_directory'); ?>/js/smooth-scroll.js"></script>
         <!-- Slick -->
-        <script src="<?php echo bloginfo('template_directory'); ?>/js/slick.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
         <!-- Slider -->
         <script src="<?php echo bloginfo('template_directory'); ?>/js/nouislider.min.js"></script>
         <!-- fullpage -->
@@ -80,33 +79,33 @@
       <!-- Navigation -->
       <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
-             <!-- Brand and toggle get grouped for better mobile display -->
-             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand page-scroll" href="<?php echo get_site_url() ?>">
-                <img class="hvr-grow" style="max-width:120px;" src="<?php echo bloginfo('template_directory'); ?>/img/header/logo-badr.png">
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'badr' ); ?></button>
-        </nav><!-- #site-navigation -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-mid">
-             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false , 'items_wrap' => '%3$s') ); ?>    					
-         </ul>
-
-         <ul class="nav navbar-nav navbar-right">
-            <a href="<?php echo get_site_url() ?>/index.php/contact"><button type="button" class="btn btn-menu-contact navbar-btn">CONTACT</button></a>
-        </ul>
+           <!-- Brand and toggle get grouped for better mobile display -->
+           <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand page-scroll" href="<?php echo get_site_url() ?>">
+            <img class="hvr-grow" style="max-width:120px;" src="<?php echo bloginfo('template_directory'); ?>/img/header/logo-badr.png">
+        </a>
     </div>
-    <!-- /.navbar-collapse -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'badr' ); ?></button>
+    </nav><!-- #site-navigation -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-mid">
+           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false , 'items_wrap' => '%3$s') ); ?>    					
+       </ul>
+
+       <ul class="nav navbar-nav navbar-right">
+        <a href="<?php echo get_site_url() ?>/index.php/contact"><button type="button" class="btn btn-menu-contact navbar-btn">CONTACT</button></a>
+    </ul>
+</div>
+<!-- /.navbar-collapse -->
 </div>
 <!-- /.container-fluid -->
 </nav>

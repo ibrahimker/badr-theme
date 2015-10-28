@@ -44,7 +44,9 @@ get_header(); ?>
 						<h2 class="head-post"><?php the_title(); ?></h2>
 					</div>
 					<div class="row">
-						<?php the_content(); ?>
+						<div class="blog-content">
+							<?php the_content(); ?>
+						</div>
 					</div>
 					<div class="row">
 						<?php wp_link_pages( array('before' => '<div class="page-links">' . esc_html__( 'Pages:', 'badr' ),
@@ -64,10 +66,10 @@ get_header(); ?>
 					</div>
 					<hr class="bates">
 					<div class="row" id="posts-author">
-						<div class="col-md-2">
-							<?php echo get_avatar( get_the_author_meta( 'ID' ), 72); ?>
+						<div class="col-md-1">
+							<?php echo get_avatar( get_the_author_meta( 'ID' ), 50); ?>
 						</div>
-						<div class="col-md-8">
+						<div class="col-md-9">
 							<p class="post-author-name"><?php the_author(); ?></p>
 							<p class="post-author-bio"><?php the_author_meta('description'); ?></p>
 						</div>
