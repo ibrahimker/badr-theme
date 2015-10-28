@@ -19,15 +19,15 @@ get_header();
             <div class="row">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs centered about-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#careers-peoples" aria-controls="home" role="tab" data-toggle="tab">PEOPLES</a></li>
-                    <li role="presentation"><a href="#careers-jobs" aria-controls="profile" role="tab" data-toggle="tab">JOBS</a></li>
+                    <!-- <li role="presentation" class="active"><a href="#careers-peoples" aria-controls="home" role="tab" data-toggle="tab">PEOPLES</a></li> -->
+                    <li role="presentation" class="active"><a href="#careers-jobs" aria-controls="profile" role="tab" data-toggle="tab">JOBS</a></li>
                     <li role="presentation"><a href="#careers-faq" aria-controls="messages" role="tab" data-toggle="tab">FAQ</a></li>
                 </ul>
             </div>
             <div class="row">
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="careers-peoples">
+<!--                     <div role="tabpanel" class="tab-pane active" id="careers-peoples">
                         <div class="col-md-12">
                             <h1 id="comp-people-header">OUR PEOPLE</h1>
                         </div>
@@ -83,8 +83,8 @@ get_header();
                             </div>
                             <p class="comp-people-desc">Unlike many companies we know, here in badr, we encourage our people to grow and build their own startups. We give them opportunites to learn, we get them covered while they're experimenting on projects, even we challenge them to make ideas and visions comes alive.</p>
                         </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="careers-jobs">
+                    </div> -->
+                    <div role="tabpanel" class="tab-pane active" id="careers-jobs">
                         <div class="row">
                             <div class="col-md-8">
                                 <p id="careers-jobs-head">JOB AVAILABLE</p>
@@ -106,9 +106,49 @@ get_header();
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 <h5 class="modal-title jobs-modal-title" id="myModalLabel">Digital Strategist</h5>
                                             </div>
+                                            <!-- start modal body -->
                                             <div class="modal-body jobs-modal-body">
-                                                <?php echo do_shortcode('[simple-social-share]'); ?>
+                                                <div class="row">
+                                                    <p class="jobs-modal-status">Status : Full Time</p>
+                                                    <p class="jobs-modal-status">Opened : Oct, 22 2015</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Summary</p>
+                                                    <p class="jobs-modal-summary-content">We are Badr Interactive, an award-winning mobile and web apps developer. We welcome you to join us as a digital strategist.</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Job Description</p>
+                                                    <div class="jobs-modal-summary-content">
+                                                        <ul>
+                                                            <li>Analyze the needs of our clients</li>
+                                                            <li>Plan the apps development, i.e the talents and the timeline needed</li>
+                                                            <li>Design the apps flow, do the user testing</li>
+                                                            <li>Implements the principles of UX in the process</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Key Qualifications</p>
+                                                    <div class="jobs-modal-summary-content">
+                                                        <ul>
+                                                            <li>Analyze the needs of our clients</li>
+                                                            <li>Plan the apps development, i.e the talents and the timeline needed</li>
+                                                            <li>Design the apps flow, do the user testing</li>
+                                                            <li>Implements the principles of UX in the process</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Submissions</p>
+                                                    <div class="jobs-modal-summary-content">Submit your following documents to recruitment@badr-interactive.com : 
+                                                        <ul>
+                                                            <li>Resume</li>
+                                                            <li>Portfolio</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <!-- end modal body -->
                                         </div>
                                     </div>
                                 </div>
@@ -130,9 +170,49 @@ get_header();
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 <h5 class="modal-title jobs-modal-title" id="myModalLabel">Developer</h5>
                                             </div>
+                                            <!-- start modal body -->
                                             <div class="modal-body jobs-modal-body">
-                                                <?php echo do_shortcode('[simple-social-share]'); ?>
+                                                <div class="row">
+                                                    <p class="jobs-modal-status">Status : Full Time</p>
+                                                    <p class="jobs-modal-status">Opened : Oct, 22 2015</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Summary</p>
+                                                    <p class="jobs-modal-summary-content">We are Badr Interactive, an award-winning mobile and web apps developer. We welcome you to join us as a digital strategist.</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Job Description</p>
+                                                    <div class="jobs-modal-summary-content">
+                                                        <ul>
+                                                            <li>Analyze the needs of our clients</li>
+                                                            <li>Plan the apps development, i.e the talents and the timeline needed</li>
+                                                            <li>Design the apps flow, do the user testing</li>
+                                                            <li>Implements the principles of UX in the process</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Key Qualifications</p>
+                                                    <div class="jobs-modal-summary-content">
+                                                        <ul>
+                                                            <li>Analyze the needs of our clients</li>
+                                                            <li>Plan the apps development, i.e the talents and the timeline needed</li>
+                                                            <li>Design the apps flow, do the user testing</li>
+                                                            <li>Implements the principles of UX in the process</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Submissions</p>
+                                                    <div class="jobs-modal-summary-content">Submit your following documents to recruitment@badr-interactive.com : 
+                                                        <ul>
+                                                            <li>Resume</li>
+                                                            <li>Portfolio</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <!-- end modal body -->
                                         </div>
                                     </div>
                                 </div>
@@ -154,9 +234,49 @@ get_header();
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 <h5 class="modal-title jobs-modal-title" id="myModalLabel">Developer</h5>
                                             </div>
+                                            <!-- start modal body -->
                                             <div class="modal-body jobs-modal-body">
-                                                <?php echo do_shortcode('[simple-social-share]'); ?>
+                                                <div class="row">
+                                                    <p class="jobs-modal-status">Status : Full Time</p>
+                                                    <p class="jobs-modal-status">Opened : Oct, 22 2015</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Summary</p>
+                                                    <p class="jobs-modal-summary-content">We are Badr Interactive, an award-winning mobile and web apps developer. We welcome you to join us as a digital strategist.</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Job Description</p>
+                                                    <div class="jobs-modal-summary-content">
+                                                        <ul>
+                                                            <li>Analyze the needs of our clients</li>
+                                                            <li>Plan the apps development, i.e the talents and the timeline needed</li>
+                                                            <li>Design the apps flow, do the user testing</li>
+                                                            <li>Implements the principles of UX in the process</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Key Qualifications</p>
+                                                    <div class="jobs-modal-summary-content">
+                                                        <ul>
+                                                            <li>Analyze the needs of our clients</li>
+                                                            <li>Plan the apps development, i.e the talents and the timeline needed</li>
+                                                            <li>Design the apps flow, do the user testing</li>
+                                                            <li>Implements the principles of UX in the process</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Submissions</p>
+                                                    <div class="jobs-modal-summary-content">Submit your following documents to recruitment@badr-interactive.com : 
+                                                        <ul>
+                                                            <li>Resume</li>
+                                                            <li>Portfolio</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <!-- end modal body -->
                                         </div>
                                     </div>
                                 </div>
@@ -178,9 +298,49 @@ get_header();
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 <h5 class="modal-title jobs-modal-title" id="myModalLabel">Developer</h5>
                                             </div>
+                                            <!-- start modal body -->
                                             <div class="modal-body jobs-modal-body">
-                                                <?php echo do_shortcode('[simple-social-share]'); ?>
+                                                <div class="row">
+                                                    <p class="jobs-modal-status">Status : Full Time</p>
+                                                    <p class="jobs-modal-status">Opened : Oct, 22 2015</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Summary</p>
+                                                    <p class="jobs-modal-summary-content">We are Badr Interactive, an award-winning mobile and web apps developer. We welcome you to join us as a digital strategist.</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Job Description</p>
+                                                    <div class="jobs-modal-summary-content">
+                                                        <ul>
+                                                            <li>Analyze the needs of our clients</li>
+                                                            <li>Plan the apps development, i.e the talents and the timeline needed</li>
+                                                            <li>Design the apps flow, do the user testing</li>
+                                                            <li>Implements the principles of UX in the process</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Key Qualifications</p>
+                                                    <div class="jobs-modal-summary-content">
+                                                        <ul>
+                                                            <li>Analyze the needs of our clients</li>
+                                                            <li>Plan the apps development, i.e the talents and the timeline needed</li>
+                                                            <li>Design the apps flow, do the user testing</li>
+                                                            <li>Implements the principles of UX in the process</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="jobs-modal-summary-title">Submissions</p>
+                                                    <div class="jobs-modal-summary-content">Submit your following documents to recruitment@badr-interactive.com : 
+                                                        <ul>
+                                                            <li>Resume</li>
+                                                            <li>Portfolio</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <!-- end modal body -->
                                         </div>
                                     </div>
                                 </div>

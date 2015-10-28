@@ -16,10 +16,7 @@ $(function() {
 });
 // fade on scroll
 $(window).scroll(function(){
-    $(".about-header").css("opacity", 1 - $(window).scrollTop() / 400);
-  });
-$(window).scroll(function(){
-    $(".careers-header").css("opacity", 1 - $(window).scrollTop() / 400);
+    $(".about-header, .careers-header").css("opacity", 1 - $(window).scrollTop() / 400);
   });
 // // Highlight the top nav as scrolling occurs
 // $('body').scrollspy({

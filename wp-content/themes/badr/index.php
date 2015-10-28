@@ -12,6 +12,24 @@
  * @package Badr Interactive
  */
 get_header(); ?>
+<style>
+.slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 40px; line-height: 1; color: #00B4FF; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }   
+
+.slick-prev:before { content: "‹"; }
+[dir="rtl"] .slick-prev:before { content: "›"; }
+
+[dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
+.slick-next:before { content: "›"; }
+[dir="rtl"] .slick-next:before { content: "‹"; }
+.slick-dots li button:before, .slick-dots li.slick-active button:before
+{
+    color: #00B4FF;
+}
+.navbar-default{
+    background-color: transparent;
+}
+</style>
+
 <script type="text/javascript">
  $(document).ready(function() {
   $('#fullpage').fullpage({
@@ -26,12 +44,18 @@ get_header(); ?>
    'responsiveHeight':500,
    'navigation': true,
    'navigationPosition': 'right',
-   'slidesNavigation': true,
-   'slidesNavPosition': 'bottom',
 });
 });
 </script>
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slide-badr').slick({
+            dots: true,
+            infinite: true,
+            speed: 300
+        });
+    });
+</script>
 <div id="fullpage">
     <div class="section home-header" id="section0">
         <!-- Header -->
@@ -125,50 +149,69 @@ get_header(); ?>
     <div class="section" id="section3">
         <section id="home5">
             <div class="container">
-                <div class="row">
-                   <div class="slide">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                       <div class="row">
-                           <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
-                       </div>
-                       <div class="row">
-                           <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
-                       </div>
-                       <div class="row">
-                        <p class="nama">John Travolta</p>
+                <div class="slide-badr">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
+                            <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
+                            <p class="nama">John Travolta</p>
+                            <p class="jabatan">CEO of Volta Indonesia</p>
+                        </div>
+                        <div class="col-md-2"></div>
                     </div>
                     <div class="row">
-                        <p class="jabatan">CEO of Volta Indonesia</p>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
+                            <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
+                            <p class="nama">John Travolta</p>
+                            <p class="jabatan">CEO of Volta Indonesia</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
+                            <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
+                            <p class="nama">John Travolta</p>
+                            <p class="jabatan">CEO of Volta Indonesia</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <p class="testimoni">I've been working with Badr Interactive since 2011. They are a bunch of amazing young people, talented, but also have a greate attitude. I would recommend Badr to everyone looking for a reliable application developer.</p>
+                            <img src="<?php echo bloginfo('template_directory'); ?>/img/yugo.jpg" class="img-circle img-responsive center-block" alt="Yugo Isal" width="125px" height="125px">
+                            <p class="nama">John Travolta</p>
+                            <p class="jabatan">CEO of Volta Indonesia</p>
+                        </div>
+                        <div class="col-md-2"></div>
                     </div>
                 </div>
-                <div class="col-md-2"></div>
             </div>
-            <div class="slide"> Slide 2 </div>
-            <div class="slide"> Slide 3 </div>
-            <div class="slide"> Slide 4 </div>
-        </div>
+        </section>
     </div>
-</section>
-</div>
-<!-- contact us section -->
-<div class="section" id="section4">
-    <section id="contact-us">
-        <div class="container">
-            <div class="row">
-                <p class="contact">Talk to us</p>
-            </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
+    <!-- contact us section -->
+    <div class="section" id="section4">
+        <section id="contact-us">
+            <div class="container">
+                <div class="row">
+                    <p class="contact">Talk to us</p>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+<!--             <div class="row">
+                <p class="contact2">Wanna look around? Take your time <a href="<?php echo get_site_url() ?>/index.php/works" class="btn btn-contact-works">WORKS</a></p>                    
             </div>
-            <div class="row">
-                <p class="contact2">Wanna look around? Take your time <a href="<?php echo get_site_url() ?>/works" class="btn btn-contact-works">WORKS</a></p>                    
-            </div>
-        </div>
+        -->        </div>
     </section>
 </div>
 <div class="section" id="section5">

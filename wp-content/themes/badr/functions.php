@@ -142,7 +142,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 //Buat gravatar jadi circular 
 add_filter('get_avatar','add_gravatar_class');
 function add_gravatar_class($class) {
-	$class = str_replace("avatar avatar-72", "avatar avatar-72 img-circle", $class);
+	$class = str_replace("avatar avatar-50", "avatar avatar-50 img-circle", $class);
 	return $class;
 }
 //Add class di image works

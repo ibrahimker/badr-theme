@@ -36,7 +36,7 @@
         <hr class="bates-footer">
         <div class="row">
             <div class="col-md-4 col-xs-12">
-                <p><a href="#">Sitemap</a> | <a href="<?php echo get_site_url() ?>/contact">Contact</a></p>
+                <p><a href="#">Sitemap</a> | <a href="<?php echo get_site_url() ?>/index.php/contact">Contact</a></p>
             </div>
         </div>
         <hr class="bates-footer">
